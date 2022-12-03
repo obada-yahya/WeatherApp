@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   width: 1112px;
-  height: 100vh;
+  /* height: 100vh; */
 }
 .backgroundSign {
   width: 694.5px;

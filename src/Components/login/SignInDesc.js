@@ -48,10 +48,10 @@ const SignInDesc = () => {
           <button className={styles.formSignInButton}>Sign In</button>
         </div>
 
-        <div className={styles.SignUpnotHaveAccount}>
+        {/* <div className={styles.SignUpnotHaveAccount}>
           <p>Don't have an account?</p>
           <a>Sign Up Now</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
