@@ -45,7 +45,7 @@ const Register = () => {
           <option value="Female">Female</option>
         </select>
         <input
-          type="text"
+          type="password"
           placeholder="Password"
           {...register("Password", {
             required: true,
