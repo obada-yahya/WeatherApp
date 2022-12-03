@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import Card from "./Components/WeatherCard";
+import DayWeather from "./Components/DayWeather";
+const data = [
+  {
+    status: "Sunny",
+    day: "Friday",
+    degree: "32",
+    mood: "Clear Sky",
+  },
+  {
+    status: "wind",
+    day: "Sunday",
+    degree: "10",
+    mood: "Clouds",
+  },
+  {
+    status: "Sunny",
+    day: "Friday",
+    degree: "32",
+    mood: "Clear Sky",
+  },
+  {
+    status: "wind",
+    day: "Sunday",
+    degree: "10",
+    mood: "Clouds",
+  },
+];
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Card/>
+    {
+      data.map((item,idx)=>(
+        <DayWeather key={idx} {...item} />
+      ))
+    }
+    </>
   );
 }
 

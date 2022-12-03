@@ -1,0 +1,19 @@
+.container{
+    width:80%;
+    box-sizing: border-box;
+    padding: 5px 20px;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px auto;
+    border-radius: 20px;
+}
+.container  div{
+    /* width:120px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > div:first-child > div:last-child,.container > div:last-child > div:last-child {
+    padding-left:10px;
+}
